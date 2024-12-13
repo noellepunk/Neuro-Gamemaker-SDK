@@ -8,5 +8,3 @@ global.RegisteredActions = [];
 
 global.GameString = "TEST";
 NeuroSendStartup();
-
-NeuroSendForceAction(global.GameString,"test state","testing the state rn",true,global.RegisteredActions);
