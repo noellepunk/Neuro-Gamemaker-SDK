@@ -11,6 +11,7 @@
   "defaultScriptType":1,
   "Folders":[
     {"$GMFolder":"","%Name":"NeuroGameAPI","folderPath":"folders/NeuroGameAPI.yy","name":"NeuroGameAPI","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Functions","folderPath":"folders/NeuroGameAPI/Functions.yy","name":"Functions","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
   "IncludedFiles":[],
   "isEcma":false,
@@ -22,6 +23,13 @@
   "resources":[
     {"id":{"name":"obj_neurogameapi","path":"objects/obj_neurogameapi/obj_neurogameapi.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"NeuroSendActionResult","path":"scripts/NeuroSendActionResult/NeuroSendActionResult.yy",},},
+    {"id":{"name":"NeuroSendContext","path":"scripts/NeuroSendContext/NeuroSendContext.yy",},},
+    {"id":{"name":"NeuroSendForceAction","path":"scripts/NeuroSendForceAction/NeuroSendForceAction.yy",},},
+    {"id":{"name":"NeuroSendRegisterAction","path":"scripts/NeuroSendRegisterAction/NeuroSendRegisterAction.yy",},},
+    {"id":{"name":"NeuroSendStartup","path":"scripts/NeuroSendStartup/NeuroSendStartup.yy",},},
+    {"id":{"name":"NeuroSendUnregisterAction","path":"scripts/NeuroSendUnregisterAction/NeuroSendUnregisterAction.yy",},},
+    {"id":{"name":"NeuroSendUnregisterAll","path":"scripts/NeuroSendUnregisterAll/NeuroSendUnregisterAll.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",

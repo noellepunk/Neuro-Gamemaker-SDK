@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"NeuroSendUnregisterAction",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"NeuroSendUnregisterAction",
+  "parent":{
+    "name":"Functions",
+    "path":"folders/NeuroGameAPI/Functions.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
