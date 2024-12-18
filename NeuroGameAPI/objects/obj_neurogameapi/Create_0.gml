@@ -32,9 +32,11 @@ global.example_action =
     name: "example_action",
     description: "Example description for an example action",
     schema: {
-        "properties" : {
-            "example" : {"string" : []} 
-        },
-    "required": [ "example" ]
+            "properties" : {
+                "example": {      
+                    "type": "integer"
+                },
+            },
+        "required": [ "example" ]
     }
 }

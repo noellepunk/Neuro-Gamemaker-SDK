@@ -24,14 +24,19 @@ global.GameString = "Rock Paper Scissors";
 NeuroSendStartup();
 
 //Declare your actions here
+
 global.select_move = 
 {
     name: "select_move",
     description: "Select a move, your options are : rock, paper, or scissors. \n remember that: 0 = rock, 1 = paper, 2 = scissors",
     schema: {
-        "properties" : {
-            "move" : {"integer" : ["0","1","2"]} 
-        },
-    "required": [ "move" ]
+            "properties" : {
+                "move": {      
+                    "type": "integer",      
+                    "minimum": 0,    
+                    "maximum": 2    
+                },
+            },
+        "required": [ "move" ]
     }
 }
