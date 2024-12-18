@@ -1,7 +1,7 @@
 # Neuro Gamemaker SDK
 This is a Gamemaker addon that implements the functionality of the [Neuro-Game-SDK](https://github.com/VedalAI/neuro-game-sdk), allowing Neuro-Sama to play Gamemaker games.
 
-An example project of rock paper scissors is provided in the source code to give a basic idea of how this addon should be implemented in your projects.
+An example project of rock paper scissors is provided in the source code to give a basic idea of how this addon can be implemented in your projects.
 
 You can contact me on discord (@noellepunk) if you're encountering any issues or if you think I should change something.
 
