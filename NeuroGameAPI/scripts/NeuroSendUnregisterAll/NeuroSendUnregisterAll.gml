@@ -1,6 +1,6 @@
-/*
-Unregisters all registered actions.
-*/
+/// @function
+/// @description              This function will unregister every action contained in the global.RegisteredActions
+
 function NeuroSendUnregisterAll(){
     var _actionunregister =
     {

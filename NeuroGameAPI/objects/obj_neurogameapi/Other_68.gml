@@ -1,3 +1,5 @@
+/// @description Recieve sent actions from the websocket, this event is where you will give actions their functionality
+
 if (ds_map_exists(async_load, "id")) {
     var _id = async_load[? "id"];
     if (_id == global.socket) {
@@ -25,6 +27,7 @@ if (ds_map_exists(async_load, "id")) {
                 var datastruct = struct_get(jason_data,"data");
                 var actionid = struct_get(datastruct,"id");
                 
+                //very basic error message for when an action fails, you may want to change what is said depending on what action failed and why
                 NeuroSendActionResult(actionid,false,"oops, something went wrong!");
             }
         }

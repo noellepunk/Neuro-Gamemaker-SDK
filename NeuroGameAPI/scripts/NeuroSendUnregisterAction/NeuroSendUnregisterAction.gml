@@ -1,6 +1,7 @@
-/*
-This message unregisters one or more actions, preventing Neuro from using them anymore.
-*/
+/// @function
+/// @param {array}  _actionnames  The names of the actions to unregister. If you try to unregister an action that isn't registered, there will be no problem.
+/// @description              This message unregisters one or more actions, preventing Neuro from using them anymore.
+
 function NeuroSendUnregisterAction(_actionnames = []){
     var _actionunregister =
     {
@@ -25,4 +26,5 @@ function NeuroSendUnregisterAction(_actionnames = []){
     var buff = buffer_create(string_byte_length(Jason), buffer_fixed, 1);
     buffer_write(buff, buffer_text, Jason);
     network_send_raw(global.socket, buff, buffer_tell(buff));
+    return _actionnames;
 }

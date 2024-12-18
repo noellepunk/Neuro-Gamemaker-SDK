@@ -1,8 +1,6 @@
-/*
-This message should be sent as soon as the game starts, to let Neuro know that the game is running.
+/// @function
+/// @description              This message should be sent as soon as the game starts, to let Neuro know that the game is running. This message clears all previously registered actions for this game and does initial setup, and as such should be the very first message that you send.
 
-This message clears all previously registered actions for this game and does initial setup, and as such should be the very first message that you send.
-*/
 function NeuroSendStartup(){
     var _startup =
     {
