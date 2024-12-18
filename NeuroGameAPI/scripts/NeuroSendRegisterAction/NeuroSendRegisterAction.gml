@@ -10,8 +10,11 @@ function NeuroSendRegisterAction( _actionarray = []){
             actions: _actionarray
         }
     }
-    
-    array_push(global.RegisteredActions,_actionarray);
+        
+    for (var i = 0; i < array_length(_actionarray); i++) {
+        array_push(global.RegisteredActions,_actionarray[i]);
+    }
+    show_debug_message(global.RegisteredActions);
     
     var Jason = json_stringify(_actionregister,true);
     

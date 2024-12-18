@@ -10,13 +10,15 @@ function NeuroSendUnregisterAction(_actionnames = []){
 	        action_names: _actionnames
 	    }
 	}
-	
+
 	for (var i = 0; i < array_length(_actionnames); ++i) {
-	    var index = array_get_index(global.RegisteredActions,_actionnames[i]);
-		if index != -1 {	
-			array_delete(global.RegisteredActions,index,1);
-		}
+        for (var z = 0; z < array_length(global.RegisteredActions); z++) {
+            if global.RegisteredActions[z].name == _actionnames[i] {
+                array_delete(global.RegisteredActions,z,1);
+            }
+        }
 	}
+    show_debug_message(global.RegisteredActions);
 	
 	var Jason = json_stringify(_actionunregister,true);
 	

@@ -12,6 +12,7 @@ function NeuroSendUnregisterAll(){
     }
     
     array_delete(global.RegisteredActions,0,array_length(global.RegisteredActions));
+    show_debug_message(global.RegisteredActions);
     
     var Jason = json_stringify(_actionunregister,true);
     
