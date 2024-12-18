@@ -3,7 +3,7 @@ This is a Gamemaker addon that implements the functionality of the [Neuro-Game-S
 
 An example project of rock paper scissors is provided in the source code to give a basic idea of how this addon should be implemented in your projects.
 
-You can notify me on [discord](https://discord.com/users/338846559108202497) if you're encountering any issues or if you think I should change something.
+You can contact me on discord (@noellepunk) if you're encountering any issues or if you think I should change something.
 
 # Installation
 1. Download the `NeuroGameSDK.yymps` file from releases
