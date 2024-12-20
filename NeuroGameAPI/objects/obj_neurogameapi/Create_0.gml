@@ -39,6 +39,7 @@ global.example_action =
                     "type": "integer"
                 },
             },
-        "required": [ "example" ]
+        "required": [ "example" ],
+        "type": "object"
     }
 }

@@ -19,7 +19,8 @@ if (ds_map_exists(async_load, "id")) {
                     //execute code via name of action called (dont forget to provide an action result!)
                     switch struct_get(datastruct,"name") {
                         case "example_action":
-
+                        //collect the data variable
+                        var data = struct_get( json_parse( struct_get( datastruct, "data" ) ),"example" );
                         break;
                     }
                 }
