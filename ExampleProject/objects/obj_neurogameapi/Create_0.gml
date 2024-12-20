@@ -40,6 +40,7 @@ global.select_move =
                     "maximum": 2    
                 },
             },
-        "required": [ "move" ]
+        "required": [ "move" ],
+        "type": "object"
     }
 }
