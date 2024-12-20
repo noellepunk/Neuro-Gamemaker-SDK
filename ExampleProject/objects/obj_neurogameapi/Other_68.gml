@@ -21,9 +21,12 @@ if (ds_map_exists(async_load, "id")) {
                         case "select_move":
                             
                             //execute code according to your action
-                            var data = real(struct_get(datastruct,"data"));
+                        
+                            //collect the data variable
+                            var data = struct_get( json_parse( struct_get( datastruct, "data" ) ), "move" );
                             show_debug_message(data);
-                            var moveresult = 0;    
+                            var moveresult = "";
+                                
                             switch data {
                                 case 0:
                                     moveresult = "rock";
@@ -36,7 +39,6 @@ if (ds_map_exists(async_load, "id")) {
                                 case 2:
                                     moveresult = "scissors";
                                  break;
-                                
                             }
                             
                             NeuroSendActionResult(actionid,true,"You have chosen : " + moveresult);
